@@ -1,3 +1,4 @@
+
 const print = (stars, header) => {
   console.log('*'.repeat(stars));
   console.log(header);

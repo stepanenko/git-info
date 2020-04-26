@@ -1,6 +1,7 @@
+
 const fs = require('fs');
 
-function fileSize (fileName, cb) {
+function fileSize(fileName, cb) {
   if (typeof fileName !== 'string') {
     return process.nextTick(
       cb,
@@ -20,7 +21,7 @@ function fileSize (fileName, cb) {
 fileSize(1, (err, size) => {
   if (err) throw err;
 
-  console.log(`Size in KB: ${size/1024}`);
+  console.log(`Size in KB: ${size / 1024}`);
 });
 
 console.log('Hello!');

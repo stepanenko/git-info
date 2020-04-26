@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 
 const conversionMap = {
@@ -9,7 +10,7 @@ const conversionMap = {
 fs.readFile(__filename, (err, buffer) => {
   let tag = buffer.slice(-4, -1);
 
-  for(let i=0;i < tag.length; i++) {
+  for (let i = 0; i < tag.length; i++) {
     tag[i] = conversionMap[tag[i]];
   }
 
