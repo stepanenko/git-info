@@ -1,3 +1,5 @@
-## NodeJS Advanced (aka advanced-node-js on OneDrive)
+## NodeJS Advanced
 
-by [Samer Buna](https://github.com/samerbuna)
+Available at OneDrive as **advanced-node-js**
+
+by **[Samer Buna](https://github.com/samerbuna)**
