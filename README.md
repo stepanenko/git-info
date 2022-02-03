@@ -3,6 +3,8 @@
 
 Created: 3.02.2022
 
+---
+
 ### Pulling a specific branch from GIT
 
 **Option 1:**
@@ -28,3 +30,5 @@ Step 1: `git fetch my-branch`
 Step 2: `git checkout my-branch`
 
 You are on your my-branch branch.
+
+---
