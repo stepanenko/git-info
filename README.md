@@ -5,7 +5,7 @@ Created: 3.02.2022
 
 ---
 
-### Pulling a specific branch from GIT
+### Pulling a specific branch from GIT:
 
 **Option 1:**
 
@@ -32,3 +32,9 @@ Step 2: `git checkout my-branch`
 You are on your my-branch branch.
 
 ---
+
+### Stop tracking a file on certain working copies:
+```
+git update-index --assume-unchanged common/default/settings.json
+```
+
