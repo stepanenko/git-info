@@ -33,8 +33,8 @@ You are on your my-branch branch.
 
 ---
 
-### Stop tracking a file on certain working copies:
+### Stop tracking a file on a certain local working copy:
 ```
 git update-index --assume-unchanged common/default/settings.json
 ```
-
+Where `common/default/settings.json` is an example file that you want to stop tracking
