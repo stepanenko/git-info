@@ -1,11 +1,8 @@
 
 ## GIT Notes
 
-Created: 3.02.2022
 
----
-
-### Pulling a specific branch from GIT:
+### 1. Pulling a specific branch from GIT:
 
 **Option 1:**
 
@@ -33,8 +30,31 @@ You are on your my-branch branch.
 
 ---
 
-### Stop tracking a file on a certain local working copy:
+### 2. Stop tracking specific file locally:
 ```
 git update-index --assume-unchanged common/default/settings.json
 ```
-Where `common/default/settings.json` is an example file that you want to stop tracking
+Where `common/default/settings.json` is some file that you want to stop tracking
+
+---
+
+### 3. Happened Errors
+
+After running `git clone link` the following occurs (on Mac M1) :
+```
+git-lfs filter-process: git-lfs: command not found
+fatal: the remote end hung up unexpectedly
+warning: Clone succeeded, but checkout failed
+```
+Solution: Install **Git LFS** extension
+
+Option 1:  
+- Download **Git LFS** extension from https://git-lfs.github.com/
+- Installed by running `./install.sh` inside the unpacked folder
+- Set up **Git LFS** for your user account by running `git lfs install`
+
+Option 2:
+```
+brew install git-lfs
+git lfs install
+```
