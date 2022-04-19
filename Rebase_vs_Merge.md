@@ -5,7 +5,6 @@
 
 - Rebase says I want the point at which I branched to move to a new starting point
 
-
 ### So when do you use either one?
 
 - Merge
