@@ -1,7 +1,7 @@
 
 ## GIT Notes
 
-### 1. Update master branch while being on another branch
+### 1. Update master branch while being on another branch:
 
 As long as you're doing a **fast-forward** merge simply use `git fetch <remote> <sourceBranch>:<destinationBranch>`.
 
@@ -19,7 +19,15 @@ Here `.` means to use the local repository as the "remote"
 
 ---
 
-### 2. Pulling a specific branch from GIT:
+### 2. Rebase flow:
+
+Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the latest local master branch
+
+[Rebase vs Merge](https://github.com/stepanenko/git-info/blob/master/Rebase_vs_Merge.md)
+
+---
+
+### 3. Pulling a specific branch from GIT:
 
 **Option 1:**
 
@@ -41,7 +49,7 @@ You are on your my-branch branch.
 
 ---
 
-### 3. Stop tracking specific file locally:
+### 4. Stop tracking specific file locally:
 ```
 git update-index --assume-unchanged common/default/settings.json
 ```
@@ -49,7 +57,7 @@ Where `common/default/settings.json` is some file that you want to stop tracking
 
 ---
 
-### 4. Happened Errors
+### 5. Happened Errors:
 
 - After running `git clone link` the following occurs (on Mac M1) :
 ```
