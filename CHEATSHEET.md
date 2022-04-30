@@ -16,3 +16,10 @@
 `git revert <commit>` - revert the changes and create a new commit with the reverted changes
 
 - `<commit>` - commits you want to revert
+
+---
+
+`git config --global -l` - show global config
+
+`git config --local -l` - show local config
+  
