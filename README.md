@@ -1,7 +1,7 @@
 
-## GIT Notes
+# GIT Notes
 
-### 1. Update master branch while being on another branch:
+## 1. Update master branch while being on another branch:
 
 As long as you're doing a **fast-forward** merge simply use `git fetch <remote> <sourceBranch>:<destinationBranch>`.
 
@@ -19,7 +19,7 @@ Here `.` means to use the local repository as the "remote"
 
 ---
 
-### 2. Rebase flow:
+## 2. Rebase flow:
 
 Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the latest local master branch
 
@@ -27,7 +27,7 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 
 ---
 
-### 3. Pulling a specific branch from GIT:
+## 3. Pulling a specific branch from GIT:
 
 **Option 1:**
 
@@ -49,7 +49,7 @@ You are on your my-branch branch.
 
 ---
 
-### 4. Stop tracking specific file locally:
+## 4. Stop tracking specific file locally:
 ```
 git update-index --assume-unchanged common/default/settings.json
 ```
@@ -57,9 +57,10 @@ Where `common/default/settings.json` is some file that you want to stop tracking
 
 ---
 
-### 5. Happened Errors:
+## 5. Happened Errors:
 
-- After running `git clone link` the following occurs (on Mac M1) :
+### After running `git clone link` the following occurs (on Mac M1):
+
 ```
 git-lfs filter-process: git-lfs: command not found
 fatal: the remote end hung up unexpectedly
@@ -79,3 +80,25 @@ Solution: Install **Git LFS** extension
 brew install git-lfs
 git lfs install
 ```
+
+---
+
+### Warning while pulling from some branch, e.g. `git pull origin <branch_name>`
+
+> Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch (silence) this message by running one of the following
+commands sometime before your next pull:
+ 
+- `git config pull.rebase false`  - merge (the default strategy)
+- `git config pull.rebase true`   - rebase
+- `git config pull.ff only`       - fast-forward only
+
+> You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per invocation, e.g:
+
+`git pull <branch_name> --ff-only`
+
+Watch out as after that you may get `fatal: Not possible to fast-forward, aborting.`
+
+---
