@@ -1,6 +1,12 @@
 
 ## Git Cheatsheet
 
+`git reset --hard` - undo last commit
+
+> The above throws away all your uncommitted changes. Always check that the output of git status is clean (that is, empty) before using it.
+
+---
+
 `git log --oneline` - logs all commits, one per line (use `down` key to scroll or hit `q` to exit)
 
 `git checkout -` - switch to the previous branch
