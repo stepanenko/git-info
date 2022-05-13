@@ -9,7 +9,7 @@ As long as you're doing a **fast-forward** merge simply use `git fetch <remote> 
 
 `git fetch origin master:master` - merge remote branch origin/master into local branch master, without having to checkout master first
 
-Then, if you want run `git merge master` - to merge master into the branch you are currently on
+Then, if you want, you can run `git merge master` - to merge master into the branch you are currently on
 
 - Example 2:
 
