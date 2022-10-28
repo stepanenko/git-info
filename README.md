@@ -31,6 +31,12 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 
 **Option 1:**
 
+- Step 1: `git fetch my-branch`
+
+- Step 2: `git checkout my-branch` - you are on your `my-branch` branch
+
+**Option 2:**
+
 > If you did a clone, then all branches should be available to you. You need to checkout the branch: `git checkout my-branch`
 
 - Step 1: If the branch isn't available for whatever reason, then you can create it: `git checkout -b my-branch`
@@ -38,14 +44,6 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 `-b` specifies "create branch"
 
 - Step 2: Then fetch and merge this branch into your just created local one: `git pull origin my-branch`
-
-**Option 2:**
-
-- Step 1: `git fetch my-branch`
-
-- Step 2: `git checkout my-branch`
-
-You are on your my-branch branch.
 
 ---
 
