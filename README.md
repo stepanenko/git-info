@@ -31,7 +31,7 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 
 **Option 1:**
 
-- Step 1: `git fetch my-branch`
+- Step 1: `git fetch origin my-branch`
 
 - Step 2: `git checkout my-branch` - you are on your `my-branch` branch
 
