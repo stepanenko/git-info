@@ -1,7 +1,13 @@
 
 # GIT Notes
 
-## 1. Update master branch while being on another branch:
+## 1. Cherry Picking a commit
+
+Make sure you are on the branch you want to apply the commit to: `git switch master`
+
+`git cherry-pick <commit-hash>`
+
+## 2. Update master branch while being on another branch:
 
 As long as you're doing a **fast-forward** merge simply use `git fetch <remote> <sourceBranch>:<destinationBranch>`.
 
@@ -19,7 +25,7 @@ Here `.` means to use the local repository as the "remote"
 
 ---
 
-## 2. Rebase flow:
+## 3. Rebase flow:
 
 Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the latest local master branch
 
@@ -27,7 +33,7 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 
 ---
 
-## 3. Pulling a specific branch from GIT:
+## 4. Pulling a specific branch from GIT:
 
 **Option 1:**
 
@@ -47,7 +53,7 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 
 ---
 
-## 4. Stop tracking specific file locally:
+## 5. Stop tracking specific file locally:
 ```
 git update-index --assume-unchanged common/default/settings.json
 ```
@@ -55,7 +61,7 @@ Where `common/default/settings.json` is some file that you want to stop tracking
 
 ---
 
-## 5. Happened Errors:
+## 6. Happened Errors:
 
 ### After running `git clone link` the following occurs (on Mac M1):
 
