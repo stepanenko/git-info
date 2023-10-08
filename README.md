@@ -1,5 +1,5 @@
 
-# GIT Notes
+# git
 
 ## 1. Cherry Picking a commit
 
