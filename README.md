@@ -61,7 +61,13 @@ Where `common/default/settings.json` is some file that you want to stop tracking
 
 ---
 
-## 6. Happened Errors:
+## 6. Fist time login guide
+
+https://kbroman.org/github_tutorial/pages/first_time.html
+
+---
+
+## 7. Happened Errors:
 
 ### After running `git clone link` the following occurs (on Mac M1):
 
