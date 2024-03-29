@@ -38,22 +38,33 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 **Option 1:**
 
 - Step 1: `git fetch origin my-branch`
-
 - Step 2: `git checkout my-branch` - you are on your `my-branch` branch
 
 **Option 2:**
 
 > If you did a clone, then all branches should be available to you. You need to checkout the branch: `git checkout my-branch`
 
-- Step 1: If the branch isn't available for whatever reason, then you can create it: `git checkout -b my-branch`
-
+- Step 1: If the branch isn't available for whatever reason, then you can create it: `git checkout -b my-branch`  
 `-b` specifies "create branch"
-
 - Step 2: Then fetch and merge this branch into your just created local one: `git pull origin my-branch`
 
 ---
 
-## 5. Stop tracking specific file locally:
+## 5. Rename branch
+
+**Option 1:**
+
+- Step 1: `git checkout old-name`
+- Step 2: `git branch -m new-name`
+
+**Option 2:**
+
+> Let's say you are on the `master` branch
+- Step 1: `git branch -m old-name new-name`
+
+---
+
+## 6. Stop tracking specific files locally:
 ```
 git update-index --assume-unchanged common/default/settings.json
 ```
@@ -61,13 +72,13 @@ Where `common/default/settings.json` is some file that you want to stop tracking
 
 ---
 
-## 6. Fist time login guide
+## 7. First-time login guide
 
 https://kbroman.org/github_tutorial/pages/first_time.html
 
 ---
 
-## 7. Happened Errors:
+## 8. Happened Errors:
 
 ### After running `git clone link` the following occurs (on Mac M1):
 
