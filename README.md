@@ -7,7 +7,7 @@ Make sure you are on the branch you want to apply the commit to: `git switch mas
 
 `git cherry-pick <commit-hash>`
 
-## 2. Update master branch while being on another branch:
+## 2. Update master branch while being on another branch
 
 As long as you're doing a **fast-forward** merge simply use `git fetch <remote> <sourceBranch>:<destinationBranch>`.
 
@@ -25,7 +25,7 @@ Here `.` means to use the local repository as the "remote"
 
 ---
 
-## 3. Rebase flow:
+## 3. Rebase flow
 
 Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the latest local master branch
 
@@ -33,7 +33,7 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 
 ---
 
-## 4. Pulling a specific branch from GIT:
+## 4. Pulling a specific branch from git
 
 **Option 1:**
 
@@ -64,7 +64,7 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 
 ---
 
-## 6. Stop tracking specific files locally:
+## 6. Stop tracking specific files locally
 ```
 git update-index --assume-unchanged common/default/settings.json
 ```
@@ -78,7 +78,7 @@ https://kbroman.org/github_tutorial/pages/first_time.html
 
 ---
 
-## 8. Happened Errors:
+## 8. Happened Errors
 
 ### After running `git clone link` the following occurs (on Mac M1):
 
