@@ -1,13 +1,21 @@
 
 # git
 
-## 1. Cherry Picking a commit
+## 1. Revert a commit that has already been pushed to remote
+
+`git revert -m 1 <commit-hash>`  
+`git revert` - commits your changes
+
+`-m 1` indicates that you'd like to revert to the tree of the first parent before the merge  
+`<commit-hash>` is the commit hash of the merge that you would like to revert.
+
+## 2. Cherry Picking a commit
 
 Make sure you are on the branch you want to apply the commit to: `git switch master`
 
 `git cherry-pick <commit-hash>`
 
-## 2. Update master branch while being on another branch
+## 3. Update master branch while being on another branch
 
 As long as you're doing a **fast-forward** merge simply use `git fetch <remote> <sourceBranch>:<destinationBranch>`.
 
@@ -25,7 +33,7 @@ Here `.` means to use the local repository as the "remote"
 
 ---
 
-## 3. Rebase flow
+## 4. Rebase flow
 
 Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the latest local master branch
 
@@ -33,7 +41,7 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 
 ---
 
-## 4. Pulling a specific branch from git
+## 5. Pulling a specific branch from git
 
 **Option 1:**
 
@@ -50,7 +58,7 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 
 ---
 
-## 5. Rename branch
+## 6. Rename branch
 
 **Option 1:**
 
@@ -64,7 +72,7 @@ Being on <my_fix> branch run: `git rebase master` - rebasing <my_fix> with the l
 
 ---
 
-## 6. Stop tracking specific files locally
+## 7. Stop tracking specific files locally
 ```
 git update-index --assume-unchanged common/default/settings.json
 ```
@@ -72,13 +80,13 @@ Where `common/default/settings.json` is some file that you want to stop tracking
 
 ---
 
-## 7. First-time login guide
+## 8. First-time login guide
 
 https://kbroman.org/github_tutorial/pages/first_time.html
 
 ---
 
-## 8. Happened Errors
+## 9. Happened Errors
 
 ### After running `git clone link` the following occurs (on Mac M1):
 
