@@ -9,7 +9,7 @@
 `-m 1` indicates that you'd like to revert to the tree of the first parent before the merge  
 `<commit-hash>` is the commit hash of the merge that you would like to revert.
 
-## 2. Cherry Picking a commit
+## 2. Cherry-picking a commit
 
 Make sure you are on the branch you want to apply the commit to: `git switch master`
 
